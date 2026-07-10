@@ -124,14 +124,14 @@
     }
 
     .wolt-button {
-      background: #dc2626;
+      background: #00a5cf;
       color: #ffffff;
-      border: 3px solid #dc2626;
+      border: 3px solid #00a5cf;
     }
 
     .wolt-button:hover {
-      background: #000000;
-      border-color: #000000;
+      background: #008fb3;
+      border-color: #008fb3;
       transform: translateY(-2px);
     }
 
@@ -304,7 +304,8 @@
       border-left: 8px solid #dc2626;
     }
 
-    .location-box {
+    .location-box,
+    .hours-box {
       margin-top: 32px;
       padding: 36px;
       border-radius: 26px;
@@ -315,7 +316,8 @@
       scroll-margin-top: 130px;
     }
 
-    .location-box h2 {
+    .location-box h2,
+    .hours-box h2 {
       margin-top: 0;
       font-size: 2.2rem;
       color: #ffffff;
@@ -330,6 +332,29 @@
 
     .address span {
       color: #dc2626;
+    }
+
+    .hours-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      color: #000000;
+      font-weight: 900;
+      border-left: 8px solid #dc2626;
+    }
+
+    .hours-time {
+      color: #dc2626;
+      white-space: nowrap;
     }
 
     footer {
@@ -362,7 +387,8 @@
         font-size: 3rem;
       }
 
-      .price-row {
+      .price-row,
+      .hours-row {
         flex-direction: column;
       }
     }
@@ -377,6 +403,7 @@
       <a href="#buffet">Buffet</a>
       <a href="#hinnat">Hinnat</a>
       <a href="#lapset">Lasten hinnat</a>
+      <a href="#aukioloajat">Aukioloajat</a>
       <a href="#sijainti">Sijainti</a>
       <a href="https://wolt.com/fi/fin/helsinki/restaurant/ravintola-flq-1" target="_blank">Wolt</a>
     </nav>
@@ -486,6 +513,22 @@
 
           <div class="small-note">
             Huom! 2-vuotiaiden hintaan ei sisälly virvoitusjuomaa.
+          </div>
+        </div>
+      </div>
+
+      <div class="hours-box" id="aukioloajat">
+        <h2>Aukioloajat</h2>
+
+        <div class="hours-list">
+          <div class="hours-row">
+            <span>Maanantai–perjantai</span>
+            <span class="hours-time">10.30–20.00</span>
+          </div>
+
+          <div class="hours-row">
+            <span>Lauantai–sunnuntai</span>
+            <span class="hours-time">11.00–20.00</span>
           </div>
         </div>
       </div>
